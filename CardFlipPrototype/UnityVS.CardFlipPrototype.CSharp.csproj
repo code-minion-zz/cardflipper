@@ -67,6 +67,8 @@
     <Compile Include="Assets\Deck.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+    <Compile Include="Assets\Elementals\Scripts\OrbitCamera.cs" />
+    <Compile Include="Assets\Elementals\Scripts\TestParticles.cs" />
     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +77,7 @@
     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
     <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Elementals\!Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
