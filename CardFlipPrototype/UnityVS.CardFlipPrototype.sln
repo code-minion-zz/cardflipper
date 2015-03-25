@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.CardFlipPrototype.CSharp", "UnityVS.CardFlipPrototype.CSharp.csproj", "{AF7472F8-333C-3FFE-49E6-EE58C76805A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.CardFlipPrototype.CSharp.Plugins", "UnityVS.CardFlipPrototype.CSharp.Plugins.csproj", "{DEC5EF56-5144-2E43-B1CF-DE08F1499166}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.CardFlipPrototype.CSharp.Editor", "UnityVS.CardFlipPrototype.CSharp.Editor.csproj", "{CEFFC936-D26A-55FE-3D79-8F169055D5A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{AF7472F8-333C-3FFE-49E6-EE58C76805A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7472F8-333C-3FFE-49E6-EE58C76805A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7472F8-333C-3FFE-49E6-EE58C76805A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC5EF56-5144-2E43-B1CF-DE08F1499166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC5EF56-5144-2E43-B1CF-DE08F1499166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC5EF56-5144-2E43-B1CF-DE08F1499166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC5EF56-5144-2E43-B1CF-DE08F1499166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEFFC936-D26A-55FE-3D79-8F169055D5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFFC936-D26A-55FE-3D79-8F169055D5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFFC936-D26A-55FE-3D79-8F169055D5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFFC936-D26A-55FE-3D79-8F169055D5A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
