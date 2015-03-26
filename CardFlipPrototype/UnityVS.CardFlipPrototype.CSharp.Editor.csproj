@@ -128,6 +128,17 @@
     <Compile Include="Assets\Editor\ImageEffects\SunShaftsEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+    <Compile Include="Assets\Particle Playground\Examples\Example Project\Scripts\Editor\FxCycleInspector.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundBrushPresetInspectorC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundCreateBrushWindowC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundCreatePresetWindowC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundInspectorC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundInstallLanguageWindowC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundLanguageC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundParticleSystemInspectorC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundParticleWindowC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Editor\PlaygroundSettingsC.cs" />
+    <Compile Include="Assets\Particle Playground\Scripts\Playground Splines\Editor\PlaygroundSplineInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
@@ -136,6 +147,12 @@
     <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Elementals\!Readme.txt" />
+    <None Include="Assets\Particle Playground\Examples\Example Project\-Readme.txt" />
+    <None Include="Assets\Particle Playground\Graphics\Shaders\Alpha Blended Texture With Color Tint.shader" />
+    <None Include="Assets\Particle Playground\Graphics\Shaders\Alpha Blended Texture.shader" />
+    <None Include="Assets\Particle Playground\Graphics\Shaders\Vertex Color.shader" />
+    <None Include="Assets\Particle Playground\Graphics\Shaders\VertexLit Color.shader" />
+    <None Include="Assets\Particle Playground\Graphics\Shaders\VertexLit Texture.shader" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
