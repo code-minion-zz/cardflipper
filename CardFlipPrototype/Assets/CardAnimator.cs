@@ -11,9 +11,9 @@ public class CardAnimator : MonoBehaviour {
 	// Use this for initialization
     void Start()
     {
-        cardFront = transform.FindChild("Front").gameObject;
-        cardBack = transform.FindChild("Back").gameObject;
-        cardFront.SetActive(false);
+        //cardFront = transform.FindChild("Front").gameObject;
+        //cardBack = transform.FindChild("Back").gameObject;
+        //cardFront.SetActive(false);
 
         //mySequence = DOTween.Sequence();
         //// Add a 1 second move tween only on the Y axis
@@ -38,15 +38,15 @@ public class CardAnimator : MonoBehaviour {
     void OnRotate()
     {
         //Debug.Log(transform.rotation.y);
-        if (transform.rotation.y > 0.7f)
-        {
-            cardFront.SetActive(true);
-            cardBack.SetActive(false);
-        }
-        else
-        {
-            cardFront.SetActive(false);
-            cardBack.SetActive(true);
-        }
+    //    if (transform.rotation.y > 0.7f)
+    //    {
+    //        cardFront.SetActive(true);
+    //        cardBack.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        cardFront.SetActive(false);
+    //        cardBack.SetActive(true);
+    //    }
     }
 }
