@@ -75,6 +75,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\Elementals\Scripts\OrbitCamera.cs" />
     <Compile Include="Assets\Elementals\Scripts\TestParticles.cs" />
+    <Compile Include="Assets\PackAnimator.cs" />
     <Compile Include="Assets\Particle Playground\Examples\Example Project\Scripts\FxCycle.cs" />
     <Compile Include="Assets\Particle Playground\Examples\Example Project\Scripts\SoundFxArray.cs" />
     <Compile Include="Assets\Particle Playground\Examples\Example Project\Scripts\TextFader.cs" />

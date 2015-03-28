@@ -2,10 +2,9 @@
 using System.Collections;
 using DG.Tweening;
 
-public class CardAnimator : MonoBehaviour {
+public class CardAnimator : MonoBehaviour
+{
 
-    GameObject cardBack;
-    GameObject cardFront;
     Sequence mySequence;
 
 	// Use this for initialization
@@ -48,5 +47,14 @@ public class CardAnimator : MonoBehaviour {
     //        cardFront.SetActive(false);
     //        cardBack.SetActive(true);
     //    }
+    }
+
+    void CompleteAnim(string name)
+    {
+        Debug.Log(name);
+        if (name == "FlyAway")
+        {
+            PackAnimator.Instance.AnimDone();
+        }
     }
 }
