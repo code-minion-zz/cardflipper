@@ -20,7 +20,7 @@ public class PackAnimator : MonoBehaviour
     private int _currentCard = 0;
     private bool _mayAct = false;
     private bool _reverse = false;
-    private bool[] _flippedArray;
+//    private bool[] _flippedArray;
 
 	// Use this for initialization
 	void Awake () {
@@ -28,7 +28,7 @@ public class PackAnimator : MonoBehaviour
 	    {
 	        instance = this;
 	    }
-	    _flippedArray = new bool[5];//{false, false, false, false, false};
+//	    _flippedArray = new bool[5];//{false, false, false, false, false};
         PlayNextCard();
 	}
 
@@ -41,10 +41,10 @@ public class PackAnimator : MonoBehaviour
             {
                 PlayNextCard();
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                PlayPrevCard();
-            }
+//            else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.UpArrow))
+//            {
+//                PlayPrevCard();
+//            }
         }
 
     }
@@ -72,27 +72,27 @@ public class PackAnimator : MonoBehaviour
         //++_currentCard;
     }
 
-    void PlayPrevCard()
-    {
-        //if (_currentCard <= 0) return;
-
-        _reverse = true;
-        Animator currentCardAnimator = Cards[_currentCard].gameObject.GetComponent<Animator>();
-
-        if (currentCardAnimator.GetCurrentAnimatorStateInfo(0).IsName("Start"))
-        {
-            if (_currentCard > 0)
-            {
-                --_currentCard;
-                PlayPrevCard();
-            }
-        }
-        else 
-        {
-            currentCardAnimator.SetBool("Reverse", true);
-            currentCardAnimator.SetTrigger("Play");
-        }
-    }
+//    void PlayPrevCard()
+//    {
+//        //if (_currentCard <= 0) return;
+//
+//        _reverse = true;
+//        Animator currentCardAnimator = Cards[_currentCard].gameObject.GetComponent<Animator>();
+//
+//        if (currentCardAnimator.GetCurrentAnimatorStateInfo(0).IsName("Start"))
+//        {
+//            if (_currentCard > 0)
+//            {
+//                --_currentCard;
+//                PlayPrevCard();
+//            }
+//        }
+//        else 
+//        {
+//            currentCardAnimator.SetBool("Reverse", true);
+//            currentCardAnimator.SetTrigger("Play");
+//        }
+//    }
 
     IEnumerator ShimmyCard(Transform card, Vector3 target, float time)
     {
@@ -130,7 +130,7 @@ public class PackAnimator : MonoBehaviour
             {
                 _currentCard = 0;
                 Debug.Log("Current Card:" + _currentCard);
-                PlayPrevCard();
+//                PlayPrevCard();
             }
 
         }
@@ -161,7 +161,11 @@ public class PackAnimator : MonoBehaviour
                 ++_currentCard;
                 if (_currentCard >= Cards.Length)
                 {
-                    _currentCard = Cards.Length - 1;
+                    SpriteRenderer sr = GreyOutPlane.GetComponent<SpriteRenderer>();
+                    //GreyOutPlane.GetComponent<Renderer>().sharedMaterial.color
+                    Color c = sr.material.color;
+                    c.a = 1;
+                    sr.material.color = c;
                 }
                 Debug.Log("Current Card:" + _currentCard);
             }
